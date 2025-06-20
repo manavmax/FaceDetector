@@ -1,0 +1,5 @@
+/Users/manavsharma/Desktop/FaceDetector/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/FaceDetector.dir
+/Users/manavsharma/Desktop/FaceDetector/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/manavsharma/Desktop/FaceDetector/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/manavsharma/Desktop/FaceDetector/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/FaceDetector_autogen_timestamp_deps.dir
+/Users/manavsharma/Desktop/FaceDetector/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/FaceDetector_autogen.dir

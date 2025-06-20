@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "FaceDetector",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FaceDetector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FaceDetector-Debug-c01dd111ac5bc1557f71.json",
+					"name" : "FaceDetector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FaceDetector_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FaceDetector_autogen-Debug-178c0a692687fdcf81d1.json",
+					"name" : "FaceDetector_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FaceDetector_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FaceDetector_autogen_timestamp_deps-Debug-4f957e631e23d580522c.json",
+					"name" : "FaceDetector_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/manavsharma/Desktop/FaceDetector/build/Qt_6_9_1_for_macOS-Debug",
+		"source" : "/Users/manavsharma/Desktop/FaceDetector"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
