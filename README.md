@@ -48,8 +48,6 @@ FaceDetector/
 ├── CMakeLists.txt
 └── README.md
 
-
-
 ---
 
 ## 💻 How to Run
@@ -81,6 +79,4 @@ Click the green ▶️ Run button in Qt Creator
 ---
 ### 🏁 Status
 ✅ Project is complete and fully functional.
-
-🎯 Actively used as a sample for internship application and desktop vision projects.
 
