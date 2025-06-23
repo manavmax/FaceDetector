@@ -28,23 +28,18 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QTimer *timer;
-    QLabel *thumbnailLabel;
     QHBoxLayout *thumbnailLayout;
 
     cv::VideoCapture *capture;
     cv::Mat frame;
     cv::dnn::Net net;
-    std::vector<cv::Mat> detectAndDrawFacesWithReturn(cv::Mat &frame, bool save);
-
-
-    QString lastSelectedSource;
-    bool isVideoPlaying;
 
     void setupConnections();
     void initializeDNN();
     void ensureFacesFolder();
     void showThumbnail(const cv::Mat &face);
     int detectAndDrawFaces(cv::Mat &frame, bool save);
+    std::vector<cv::Mat> detectAndDrawFacesWithReturn(cv::Mat &frame, bool save);
 };
 
 #endif // MAINWINDOW_H
