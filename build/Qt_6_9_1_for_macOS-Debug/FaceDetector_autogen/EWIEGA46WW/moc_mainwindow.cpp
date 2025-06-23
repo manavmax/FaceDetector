@@ -7,6 +7,7 @@
 *****************************************************************************/
 
 #include "../../../../mainwindow.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -39,22 +40,25 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "MainWindow",
-        "startVideo",
+        "updateFrame",
         "",
-        "stopVideo",
-        "readFrame",
-        "captureFrame"
+        "captureFrame",
+        "handleSourceSelection",
+        "index",
+        "openVideoFile"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'startVideo'
+        // Slot 'updateFrame'
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'stopVideo'
-        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'readFrame'
-        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'captureFrame'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'handleSourceSelection'
+        QtMocHelpers::SlotData<void(int)>(4, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 5 },
+        }}),
+        // Slot 'openVideoFile'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -78,14 +82,13 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     auto *_t = static_cast<MainWindow *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->startVideo(); break;
-        case 1: _t->stopVideo(); break;
-        case 2: _t->readFrame(); break;
-        case 3: _t->captureFrame(); break;
+        case 0: _t->updateFrame(); break;
+        case 1: _t->captureFrame(); break;
+        case 2: _t->handleSourceSelection((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 3: _t->openVideoFile(); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *MainWindow::metaObject() const

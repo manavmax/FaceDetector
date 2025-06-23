@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QComboBox>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
@@ -25,11 +26,14 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QVBoxLayout *verticalLayout_2;
+    QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
-    QLabel *faceCountLabel;
+    QLabel *statusLabel;
     QComboBox *sourceComboBox;
     QLabel *videoLabel;
+    QLabel *faceCountLabel;
+    QWidget *thumbnailFrame;
+    QHBoxLayout *thumbnailContainer;
     QPushButton *captureButton;
     QPushButton *startButton;
     QPushButton *stopButton;
@@ -39,19 +43,27 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(798, 687);
+        MainWindow->resize(798, 750);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        verticalLayout_2 = new QVBoxLayout(centralwidget);
-        verticalLayout_2->setObjectName("verticalLayout_2");
+        horizontalLayout = new QHBoxLayout(centralwidget);
+        horizontalLayout->setObjectName("horizontalLayout");
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        faceCountLabel = new QLabel(centralwidget);
-        faceCountLabel->setObjectName("faceCountLabel");
+        statusLabel = new QLabel(centralwidget);
+        statusLabel->setObjectName("statusLabel");
+        QFont font;
+        font.setPointSize(12);
+        font.setBold(true);
+        statusLabel->setFont(font);
+        statusLabel->setStyleSheet(QString::fromUtf8("color: violet;"));
 
-        verticalLayout->addWidget(faceCountLabel);
+        verticalLayout->addWidget(statusLabel);
 
         sourceComboBox = new QComboBox(centralwidget);
+        sourceComboBox->addItem(QString());
+        sourceComboBox->addItem(QString());
+        sourceComboBox->addItem(QString());
         sourceComboBox->setObjectName("sourceComboBox");
 
         verticalLayout->addWidget(sourceComboBox);
@@ -59,9 +71,29 @@ public:
         videoLabel = new QLabel(centralwidget);
         videoLabel->setObjectName("videoLabel");
         videoLabel->setMinimumSize(QSize(640, 480));
+        videoLabel->setFrameShape(QFrame::Shape::Box);
         videoLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         verticalLayout->addWidget(videoLabel);
+
+        faceCountLabel = new QLabel(centralwidget);
+        faceCountLabel->setObjectName("faceCountLabel");
+        QFont font1;
+        font1.setBold(true);
+        faceCountLabel->setFont(font1);
+        faceCountLabel->setStyleSheet(QString::fromUtf8("color: green;"));
+
+        verticalLayout->addWidget(faceCountLabel);
+
+        thumbnailFrame = new QWidget(centralwidget);
+        thumbnailFrame->setObjectName("thumbnailFrame");
+
+        verticalLayout->addWidget(thumbnailFrame);
+
+        thumbnailContainer = new QHBoxLayout();
+        thumbnailContainer->setObjectName("thumbnailContainer");
+
+        verticalLayout->addLayout(thumbnailContainer);
 
         captureButton = new QPushButton(centralwidget);
         captureButton->setObjectName("captureButton");
@@ -79,7 +111,7 @@ public:
         verticalLayout->addWidget(stopButton);
 
 
-        verticalLayout_2->addLayout(verticalLayout);
+        horizontalLayout->addLayout(verticalLayout);
 
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
@@ -93,12 +125,16 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        faceCountLabel->setText(QCoreApplication::translate("MainWindow", "Face: 0", nullptr));
-        videoLabel->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        captureButton->setText(QCoreApplication::translate("MainWindow", "Capture", nullptr));
-        startButton->setText(QCoreApplication::translate("MainWindow", "Start", nullptr));
-        stopButton->setText(QCoreApplication::translate("MainWindow", "Stop", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Face Detector", nullptr));
+        statusLabel->setText(QCoreApplication::translate("MainWindow", "\342\234\250Status : Idle", nullptr));
+        sourceComboBox->setItemText(0, QCoreApplication::translate("MainWindow", "Select Source", nullptr));
+        sourceComboBox->setItemText(1, QCoreApplication::translate("MainWindow", "WebCam", nullptr));
+        sourceComboBox->setItemText(2, QCoreApplication::translate("MainWindow", "LocalFiles", nullptr));
+
+        faceCountLabel->setText(QCoreApplication::translate("MainWindow", "\360\237\230\203 Faces Detected: 0", nullptr));
+        captureButton->setText(QCoreApplication::translate("MainWindow", "\360\237\223\270 Capture", nullptr));
+        startButton->setText(QCoreApplication::translate("MainWindow", "\360\237\237\242 Start", nullptr));
+        stopButton->setText(QCoreApplication::translate("MainWindow", "\360\237\224\264 Stop", nullptr));
     } // retranslateUi
 
 };

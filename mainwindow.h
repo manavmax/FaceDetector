@@ -3,10 +3,10 @@
 
 #include <QMainWindow>
 #include <QTimer>
-#include <QDateTime>
+#include <QLabel>
+#include <QHBoxLayout>
 #include <opencv2/opencv.hpp>
-#include <opencv2/imgproc.hpp>
-#include <opencv2/objdetect.hpp>
+#include <opencv2/dnn.hpp>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,18 +20,31 @@ public:
     ~MainWindow();
 
 private slots:
-    void startVideo();
-    void stopVideo();
-    void readFrame();
+    void updateFrame();
     void captureFrame();
+    void handleSourceSelection(int index);
+    void openVideoFile();
 
 private:
     Ui::MainWindow *ui;
-    cv::VideoCapture cap;
-    cv::Mat currentFrame;
     QTimer *timer;
-    cv::CascadeClassifier faceCascade;
+    QLabel *thumbnailLabel;
+    QHBoxLayout *thumbnailLayout;
 
+    cv::VideoCapture *capture;
+    cv::Mat frame;
+    cv::dnn::Net net;
+    std::vector<cv::Mat> detectAndDrawFacesWithReturn(cv::Mat &frame, bool save);
+
+
+    QString lastSelectedSource;
+    bool isVideoPlaying;
+
+    void setupConnections();
+    void initializeDNN();
+    void ensureFacesFolder();
+    void showThumbnail(const cv::Mat &face);
+    int detectAndDrawFaces(cv::Mat &frame, bool save);
 };
 
 #endif // MAINWINDOW_H

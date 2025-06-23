@@ -1,5 +1,0 @@
-/Users/manavsharma/Desktop/FaceDetector/build/CMakeFiles/FaceDetector.dir
-/Users/manavsharma/Desktop/FaceDetector/build/CMakeFiles/edit_cache.dir
-/Users/manavsharma/Desktop/FaceDetector/build/CMakeFiles/rebuild_cache.dir
-/Users/manavsharma/Desktop/FaceDetector/build/CMakeFiles/FaceDetector_autogen_timestamp_deps.dir
-/Users/manavsharma/Desktop/FaceDetector/build/CMakeFiles/FaceDetector_autogen.dir

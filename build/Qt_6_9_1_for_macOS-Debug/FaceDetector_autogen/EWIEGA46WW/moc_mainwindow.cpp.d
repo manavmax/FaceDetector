@@ -749,7 +749,6 @@
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/arm_vector_types.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/limits.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
-  /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/QDateTime \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
@@ -774,7 +773,6 @@
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qbytearraylist.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayview.h \
-  /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qcalendar.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qchar.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qcompare.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qcompare_impl.h \
@@ -788,7 +786,6 @@
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
-  /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qdatetime.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qdeadlinetimer.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qelapsedtimer.h \
@@ -805,13 +802,13 @@
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qhash.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qline.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qlist.h \
-  /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qlocale.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qlogging.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qmalloc.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qmap.h \
@@ -879,6 +876,7 @@
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qtversionchecks.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qtypes.h \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qurl.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
@@ -899,18 +897,28 @@
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpicture.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qpolygon.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtextdocument.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QHBoxLayout \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qgridlayout.h \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qlabel.h \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qlayout.h \
+  /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qlayoutitem.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
   /Users/manavsharma/Qt/6.9.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \

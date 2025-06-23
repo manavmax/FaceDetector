@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_FaceDetector_FILE /Users/manavsharma/Desktop/FaceDetector/build/FaceDetector)
-set(__QT_DEPLOY_TARGET_FaceDetector_TYPE EXECUTABLE)

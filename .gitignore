@@ -1,0 +1,14 @@
+build/
+*.pro.user
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.log
+*.DS_Store
+*.png
+*.mp4
+*.avi
+*.mov
+faces/

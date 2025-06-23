@@ -7,25 +7,50 @@
     <x>0</x>
     <y>0</y>
     <width>798</width>
-    <height>687</height>
+    <height>750</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Face Detector</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QLabel" name="faceCountLabel">
+       <widget class="QLabel" name="statusLabel">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: violet;</string>
+        </property>
         <property name="text">
-         <string>Face: 0</string>
+         <string>✨Status : Idle</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="sourceComboBox"/>
+       <widget class="QComboBox" name="sourceComboBox">
+        <item>
+         <property name="text">
+          <string>Select Source</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>WebCam</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LocalFiles</string>
+         </property>
+        </item>
+       </widget>
       </item>
       <item>
        <widget class="QLabel" name="videoLabel">
@@ -35,8 +60,8 @@
           <height>480</height>
          </size>
         </property>
-        <property name="text">
-         <string>TextLabel</string>
+        <property name="frameShape">
+         <enum>QFrame::Shape::Box</enum>
         </property>
         <property name="alignment">
          <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -44,23 +69,44 @@
        </widget>
       </item>
       <item>
+       <widget class="QLabel" name="faceCountLabel">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: green;</string>
+        </property>
+        <property name="text">
+         <string>😃 Faces Detected: 0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="thumbnailFrame" native="true"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="thumbnailContainer"/>
+      </item>
+      <item>
        <widget class="QPushButton" name="captureButton">
         <property name="text">
-         <string>Capture</string>
+         <string>📸 Capture</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="startButton">
         <property name="text">
-         <string>Start</string>
+         <string>🟢 Start</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="stopButton">
         <property name="text">
-         <string>Stop</string>
+         <string>🔴 Stop</string>
         </property>
        </widget>
       </item>
