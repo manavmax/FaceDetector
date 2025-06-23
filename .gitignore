@@ -7,7 +7,6 @@ build/
 *.exe
 *.log
 *.DS_Store
-*.png
 *.mp4
 *.avi
 *.mov
