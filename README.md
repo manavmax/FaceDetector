@@ -67,19 +67,17 @@ Make sure OpenCV is linked in Kit / CMake configuration
 ### 3. Build & Run
 Click the green ▶️ Run button in Qt Creator
 
----
 ### Select Webcam or Browse File from the dropdown
 ---
-### ⚙️ Model Files Required
+## ⚙️ Model Files Required
 
-Ensure the following two files are placed in the same folder as the executable: 
-deploy.prototxt res10_300x300_ssd_iter_140000.caffemodel
----
-<small>If running from Qt Creator, copy them to the build/ directory:</small>
-<small>cp deploy.prototxt res10_300x300_ssd_iter_140000.caffemodel ./build/</small>
+    Ensure the following two files are placed in the same folder as the executable: 
+    deploy.prototxt res10_300x300_ssd_iter_140000.caffemodel
+    If running from Qt Creator, copy them to the build/ directory:</small>
+    cp deploy.prototxt res10_300x300_ssd_iter_140000.caffemodel ./build/</small>
 ---
 ### 🙋‍♂️ Author
-Manav Sharma
+    Manav Sharma
 ---
 ### 🏁 Status
 ✅ Project is complete and fully functional.
