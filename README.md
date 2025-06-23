@@ -22,7 +22,7 @@ A powerful real-time face detection desktop application built using **Qt (C++)**
 
 | Live Detection | Face Capture | Thumbnails |
 |----------------|--------------|------------|
-| ![Live](screenshots/live.png) | ![Capture](screenshots/capture.png) | ![Thumbs](screenshots/thumbs.png) |
+| ![Live](Screenshot/live.png) | ![Capture](Screenshot/capture.png) | ![Thumbs](Screenshot/thumb.png) |
 
 ---
 
