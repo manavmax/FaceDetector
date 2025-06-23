@@ -65,7 +65,7 @@ Make sure OpenCV is linked in Kit / CMake configuration
 ### 3. Build & Run
 Click the green ▶️ Run button in Qt Creator
 
-### Select Webcam or Browse File from the dropdown
+### 4. Select Webcam or Browse File from the dropdown
 ---
 ## ⚙️ Model Files Required
 
